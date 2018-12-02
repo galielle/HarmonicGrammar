@@ -1,0 +1,26 @@
+Eval-a-lc.txt	1	
+Eval-b-lc.txt	1	
+Eval-c-lc.txt	1	
+Eval-d-lc.txt	2	1
+Eval-e-lc.txt	1	
+Eval-f-lc.txt	6	
+Eval-g-lc.txt	1	
+Eval-h-lc.txt	1	
+Eval-i-lc.txt	2	
+Eval-j-lc.txt	2	
+Eval-k-lc.txt	4	
+Eval-l-lc.txt	1	
+Eval-m-lc.txt	1	
+Eval-n-lc.txt	1	
+Eval-o-lc.txt	1	
+Eval-p-lc.txt	2	1
+Eval-q-lc.txt	1	
+Eval-r-lc.txt	1	
+Eval-s-lc.txt	1	
+Eval-t-lc.txt	2	
+Eval-u-lc.txt	1	
+Eval-v-lc.txt	1	
+Eval-w-lc.txt	1	
+Eval-x-lc.txt	2	
+Eval-y-lc.txt	2	1
+Eval-z2-lc.txt	2	

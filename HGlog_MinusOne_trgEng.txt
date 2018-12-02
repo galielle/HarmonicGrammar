@@ -1,0 +1,764 @@
+trgEng																																			
+																																			
+																																			
+Results without constraint 1																																			
+																																			
+Max accuracy reached: 0.87																																			
+Max accuracy first reached on iteration: 197 (547 samples)																																			
+Grammar for max accuracy:																																			
+Weights:	-0.07	0.15	0.3	0.61	0.39	0.75	0.8	0.47	0.15	0.97																									
+Constraints:	2	4	5	9	12	15	16	32	33	46																									
+Max accuracy reached: 0.87																																			
+Max accuracy first reached on iteration: 197 (547 samples)																																			
+Grammar for max accuracy:																																			
+Weights:	-0.07	0.15	0.3	0.61	0.39	0.75	0.8	0.47	0.15	0.97																									
+Constraints:	2	4	5	9	12	15	16	32	33	46																									
+																																			
+Letter	Target	Harmony	Rank	N Cands	Candidates tied with or ranked higher than the target																														
+A	6	-0.79	1	176																															
+B	4	-0.32	1	150																															
+C	1	0	1	2																															
+D	2	0.07	1	12																															
+E	22	-0.96	1	2704																															
+F	6	-0.25	1	176																															
+G	1	-0.54	3	14	3	2																													
+H	6	-0.25	1	192																															
+I	6	-1.18	1	192																															
+J	1	-0.15	1	2																															
+K	12	-0.47	1	176																															
+L	1	0	1	14																															
+M	12	-0.23	1	2542																															
+N	4	-0.23	5	162	3	2	6	5																											
+O	1	0	1	2																															
+P	2	0.07	1	14																															
+Q	2	-0.32	1	16																															
+R	4	-0.32	1	162																															
+S	1	-0.69	1	14																															
+T	2	-0.47	1	16																															
+U	1	0	1	2																															
+V	1	-0.3	3	14	3	2																													
+W	1	-0.6	24	2542	2	13	12	15	14	17	16	203	3	215	218	219	26	27	28	29	39	31	30	130	127	129	116								
+X	2	-0.47	1	16																															
+Y	4	-0.47	1	144																															
+Z	1	-1.32	1	162																															
+a	2	0.07	1	16																															
+b	2	0.07	1	16																															
+c	1	0	1	2																															
+d	2	-0.08	1	16																															
+e	1	-0.54	5	14	11	10	9	8																											
+f	2	-0.47	1	16																															
+g	2	-0.47	1	16																															
+h	2	0.07	1	16																															
+i	2	-0.55	1	8																															
+j	2	-1.09	1	8																															
+k	4	-0.47	1	176																															
+l	1	0	1	2																															
+m	6	0.14	1	192																															
+n	2	0.07	1	16																															
+o	1	0	1	2																															
+p	2	0.07	1	16																															
+q	2	0.07	1	16																															
+r	2	0.07	1	16																															
+s	1	-0.69	1	14																															
+t	2	-0.32	1	16																															
+u	1	0	1	14																															
+v	1	-0.3	3	14	3	2																													
+w	1	-0.6	24	2542	2	13	12	15	14	17	16	203	3	215	218	219	26	27	28	29	39	31	30	130	127	129	116								
+x	2	-0.47	1	16																															
+y	2	-0.47	1	16																															
+z	1	-1.32	1	162																															
+																																			
+																																			
+Results without constraint 2																																			
+																																			
+Max accuracy reached: 0.87																																			
+Max accuracy first reached on iteration: 50 (330 samples)																																			
+Grammar for max accuracy:																																			
+Weights:	0.16	0.06	0.18	0.47	0.5	0.9	0.49	0.68	0.01	0.87																									
+Constraints:	1	4	5	9	12	15	16	32	33	46																									
+Max accuracy reached: 0.87																																			
+Max accuracy first reached on iteration: 50 (330 samples)																																			
+Grammar for max accuracy:																																			
+Weights:	0.16	0.06	0.18	0.47	0.5	0.9	0.49	0.68	0.01	0.87																									
+Constraints:	1	4	5	9	12	15	16	32	33	46																									
+																																			
+Letter	Target	Harmony	Rank	N Cands	Candidates tied with or ranked higher than the target																														
+A	6	-1.06	1	176																															
+B	4	-0.5	1	150																															
+C	1	0	1	2																															
+D	2	0	1	12																															
+E	22	-1.5	1	2704																															
+F	6	-0.5	1	176																															
+G	1	-0.56	2	14	3																														
+H	6	-0.5	1	192																															
+I	6	-1.51	1	192																															
+J	1	-0.06	1	2																															
+K	12	-0.56	1	176																															
+L	1	0	1	14																															
+M	12	-0.18	1	2542																															
+N	4	-0.18	4	162	3	6	5																												
+O	1	0	1	2																															
+P	2	0	1	14																															
+Q	2	-0.5	1	16																															
+R	4	-0.5	1	162																															
+S	1	-0.62	1	14																															
+T	2	-0.51	1	16																															
+U	1	0	1	2																															
+V	1	-0.18	2	14	3																														
+W	1	-0.36	7	2542	17	3	28	29	31	30																									
+X	2	-0.56	1	16																															
+Y	4	-0.56	1	144																															
+Z	1	-1.56	1	162																															
+a	2	0	1	16																															
+b	2	0	1	16																															
+c	1	0	1	2																															
+d	2	-0.01	1	16																															
+e	1	-0.51	2	14	9																														
+f	2	-0.56	1	16																															
+g	2	-0.56	1	16																															
+h	2	0	1	16																															
+i	2	-0.69	1	8																															
+j	2	-1.25	1	8																															
+k	4	-0.56	1	176																															
+l	1	0	1	2																															
+m	6	0	1	192																															
+n	2	0	1	16																															
+o	1	0	1	2																															
+p	2	0	1	16																															
+q	2	0	1	16																															
+r	2	0	1	16																															
+s	1	-0.62	1	14																															
+t	2	-0.5	1	16																															
+u	1	0	1	14																															
+v	1	-0.18	2	14	3																														
+w	1	-0.36	7	2542	17	3	28	29	31	30																									
+x	2	-0.56	1	16																															
+y	2	-0.56	1	16																															
+z	1	-1.56	1	162																															
+																																			
+																																			
+Results without constraint 4																																			
+																																			
+Max accuracy reached: 0.81																																			
+Max accuracy first reached on iteration: 6 (26 samples)																																			
+Grammar for max accuracy:																																			
+Weights:	0.8	0.48	0.28	0.73	0.43	1.14	0.63	0.44	0.42	0.56																									
+Constraints:	1	2	5	9	12	15	16	32	33	46																									
+Max accuracy reached: 0.81																																			
+Max accuracy first reached on iteration: 6 (26 samples)																																			
+Grammar for max accuracy:																																			
+Weights:	0.8	0.48	0.28	0.73	0.43	1.14	0.63	0.44	0.42	0.56																									
+Constraints:	1	2	5	9	12	15	16	32	33	46																									
+																																			
+Letter	Target	Harmony	Rank	N Cands	Candidates tied with or ranked higher than the target																														
+A	6	-1.82	2	176	8																														
+B	4	-0.91	1	150																															
+C	1	0	1	2																															
+D	2	-0.48	1	12																															
+E	22	-2.73	14	2704	54	56	784	782	62	64	24	774	776	876	874	32	30																		
+F	6	-1.39	6	176	8	80	14	16	78																										
+G	1	-0.43	1	14																															
+H	6	-1.39	2	192	8																														
+I	6	-2.67	4	192	8	14	16																												
+J	1	0	1	2																															
+K	12	-0.91	1	176																															
+L	1	0	1	14																															
+M	12	-0.76	1	2542																															
+N	4	-0.76	1	162																															
+O	1	0	1	2																															
+P	2	-0.48	1	14																															
+Q	2	-0.91	1	16																															
+R	4	-0.91	1	162																															
+S	1	-0.43	1	14																															
+T	2	-1.33	2	16	4																														
+U	1	0	2	2	2																														
+V	1	-0.28	1	14																															
+W	1	-0.56	1	2542																															
+X	2	-0.91	1	16																															
+Y	4	-0.91	1	144																															
+Z	1	-1.29	1	162																															
+a	2	-0.48	1	16																															
+b	2	-0.48	1	16																															
+c	1	0	1	2																															
+d	2	-0.9	1	16																															
+e	1	-0.85	1	14																															
+f	2	-0.91	2	16	4																														
+g	2	-0.91	1	16																															
+h	2	-0.48	1	16																															
+i	2	-1.34	1	8																															
+j	2	-1.77	1	8																															
+k	4	-0.91	1	176																															
+l	1	0	1	2																															
+m	6	-0.96	1	192																															
+n	2	-0.48	1	16																															
+o	1	0	1	2																															
+p	2	-0.48	1	16																															
+q	2	-0.48	1	16																															
+r	2	-0.48	2	16	4																														
+s	1	-0.43	1	14																															
+t	2	-0.91	2	16	4																														
+u	1	0	1	14																															
+v	1	-0.28	1	14																															
+w	1	-0.56	1	2542																															
+x	2	-0.91	1	16																															
+y	2	-0.91	1	16																															
+z	1	-1.29	1	162																															
+																																			
+																																			
+Results without constraint 5																																			
+																																			
+Max accuracy reached: 0.85																																			
+Max accuracy first reached on iteration: 16 (95 samples)																																			
+Grammar for max accuracy:																																			
+Weights:	0.72	0.25	0.2	0.61	0.3	0.44	0.65	0.37	0.05	0.18																									
+Constraints:	1	2	4	9	12	15	16	32	33	46																									
+Max accuracy reached: 0.85																																			
+Max accuracy first reached on iteration: 16 (95 samples)																																			
+Grammar for max accuracy:																																			
+Weights:	0.72	0.25	0.2	0.61	0.3	0.44	0.65	0.37	0.05	0.18																									
+Constraints:	1	2	4	9	12	15	16	32	33	46																									
+																																			
+Letter	Target	Harmony	Rank	N Cands	Candidates tied with or ranked higher than the target																														
+A	6	-1.3	1	176																															
+B	4	-0.55	1	150																															
+C	1	0	1	2																															
+D	2	-0.25	1	12																															
+E	22	-1.65	1	2704																															
+F	6	-0.8	1	176																															
+G	1	-0.5	1	14																															
+H	6	-0.8	2	192	14																														
+I	6	-1.45	1	192																															
+J	1	-0.2	1	2																															
+K	12	-0.75	1	176																															
+L	1	0	1	14																															
+M	12	-0.25	1	2542																															
+N	4	-0.25	1	162																															
+O	1	0	1	2																															
+P	2	-0.25	1	14																															
+Q	2	-0.55	1	16																															
+R	4	-0.55	1	162																															
+S	1	-0.7	1	14																															
+T	2	-0.6	1	16																															
+U	1	0	1	2																															
+V	1	0	1	14																															
+W	1	0	1	2542																															
+X	2	-0.75	2	16	4																														
+Y	4	-0.75	5	144	28	8	34	10																											
+Z	1	-1.1	1	162																															
+a	2	-0.25	2	16	4																														
+b	2	-0.25	1	16																															
+c	1	0	1	2																															
+d	2	-0.3	2	16	4																														
+e	1	-0.35	1	14																															
+f	2	-0.75	1	16																															
+g	2	-0.75	1	16																															
+h	2	-0.25	1	16																															
+i	2	-0.67	1	8																															
+j	2	-1.17	1	8																															
+k	4	-0.75	1	176																															
+l	1	0	1	2																															
+m	6	-0.5	1	192																															
+n	2	-0.25	1	16																															
+o	1	0	1	2																															
+p	2	-0.25	1	16																															
+q	2	-0.25	2	16	4																														
+r	2	-0.25	1	16																															
+s	1	-0.7	1	14																															
+t	2	-0.55	1	16																															
+u	1	0	1	14																															
+v	1	0	1	14																															
+w	1	0	1	2542																															
+x	2	-0.75	2	16	4																														
+y	2	-0.75	2	16	4																														
+z	1	-1.1	1	162																															
+																																			
+																																			
+Results without constraint 9																																			
+																																			
+Max accuracy reached: 0.96																																			
+Max accuracy first reached on iteration: 15 (169 samples)																																			
+Grammar for max accuracy:																																			
+Weights:	0.73	0.44	0.34	0.55	0.25	0.95	0.26	0.58	0.12	0.8																									
+Constraints:	1	2	4	5	12	15	16	32	33	46																									
+Max accuracy reached: 0.96																																			
+Max accuracy first reached on iteration: 15 (169 samples)																																			
+Grammar for max accuracy:																																			
+Weights:	0.73	0.44	0.34	0.55	0.25	0.95	0.26	0.58	0.12	0.8																									
+Constraints:	1	2	4	5	12	15	16	32	33	46																									
+																																			
+Letter	Target	Harmony	Rank	N Cands	Candidates tied with or ranked higher than the target																														
+A	6	-1.72	2	176	18																														
+B	4	-0.69	1	150																															
+C	1	0	1	2																															
+D	2	-0.44	1	12																															
+E	22	-2.07	1	2704																															
+F	6	-1.13	1	176																															
+G	1	-0.59	1	14																															
+H	6	-1.13	1	192																															
+I	6	-1.75	1	192																															
+J	1	-0.34	1	2																															
+K	12	-1.03	1	176																															
+L	1	0	1	14																															
+M	12	-0.99	1	2542																															
+N	4	-0.99	3	162	6	17																													
+O	1	0	1	2																															
+P	2	-0.44	1	14																															
+Q	2	-0.69	1	16																															
+R	4	-0.69	1	162																															
+S	1	-0.93	1	14																															
+T	2	-0.81	1	16																															
+U	1	0	1	2																															
+V	1	-0.55	1	14																															
+W	1	-1.1	1	2542																															
+X	2	-1.03	1	16																															
+Y	4	-1.03	1	144																															
+Z	1	-1.09	1	162																															
+a	2	-0.44	1	16																															
+b	2	-0.44	1	16																															
+c	1	0	1	2																															
+d	2	-0.56	1	16																															
+e	1	-0.37	1	14																															
+f	2	-1.03	1	16																															
+g	2	-1.03	1	16																															
+h	2	-0.44	1	16																															
+i	2	-1.14	1	8																															
+j	2	-1.73	1	8																															
+k	4	-1.03	1	176																															
+l	1	0	1	2																															
+m	6	-0.88	1	192																															
+n	2	-0.44	1	16																															
+o	1	0	1	2																															
+p	2	-0.44	1	16																															
+q	2	-0.44	1	16																															
+r	2	-0.44	1	16																															
+s	1	-0.93	1	14																															
+t	2	-0.69	1	16																															
+u	1	0	1	14																															
+v	1	-0.55	1	14																															
+w	1	-1.1	1	2542																															
+x	2	-1.03	1	16																															
+y	2	-1.03	1	16																															
+z	1	-1.09	1	162																															
+																																			
+																																			
+Results without constraint 12																																			
+																																			
+Max accuracy reached: 0.85																																			
+Max accuracy first reached on iteration: 44 (215 samples)																																			
+Grammar for max accuracy:																																			
+Weights:	0.75	0.3	0.43	0.51	0.63	0.76	0.68	0.56	0.03	0.59																									
+Constraints:	1	2	4	5	9	15	16	32	33	46																									
+Max accuracy reached: 0.85																																			
+Max accuracy first reached on iteration: 44 (215 samples)																																			
+Grammar for max accuracy:																																			
+Weights:	0.75	0.3	0.43	0.51	0.63	0.76	0.68	0.56	0.03	0.59																									
+Constraints:	1	2	4	5	9	15	16	32	33	46																									
+																																			
+Letter	Target	Harmony	Rank	N Cands	Candidates tied with or ranked higher than the target																														
+A	6	-1.03	1	176																															
+B	4	-0.3	2	150	77																														
+C	1	0	1	2																															
+D	2	-0.3	2	12	8																														
+E	22	-0.9	1	2704																															
+F	6	-0.6	1	176																															
+G	1	-0.43	2	14	3																														
+H	6	-0.6	1	192																															
+I	6	-0.63	1	192																															
+J	1	-0.43	1	2																															
+K	12	-0.73	1	176																															
+L	1	0	1	14																															
+M	12	-0.81	2	2542	933																														
+N	4	-0.81	8	162	129	83	38	61	6	91	154																								
+O	1	0	1	2																															
+P	2	-0.3	2	14	9																														
+Q	2	-0.3	1	16																															
+R	4	-0.3	1	162																															
+S	1	-0.86	1	14																															
+T	2	-0.33	1	16																															
+U	1	0	1	2																															
+V	1	-0.51	1	14																															
+W	1	-1.02	1	2542																															
+X	2	-0.73	1	16																															
+Y	4	-0.73	1	144																															
+Z	1	-0.43	1	162																															
+a	2	-0.3	1	16																															
+b	2	-0.3	1	16																															
+c	1	0	1	2																															
+d	2	-0.33	2	16	10																														
+e	1	-0.03	1	14																															
+f	2	-0.73	1	16																															
+g	2	-0.73	1	16																															
+h	2	-0.3	1	16																															
+i	2	-0.89	1	8																															
+j	2	-1.32	1	8																															
+k	4	-0.73	1	176																															
+l	1	0	1	2																															
+m	6	-0.6	2	192	38																														
+n	2	-0.3	1	16																															
+o	1	0	1	2																															
+p	2	-0.3	1	16																															
+q	2	-0.3	1	16																															
+r	2	-0.3	1	16																															
+s	1	-0.86	1	14																															
+t	2	-0.3	1	16																															
+u	1	0	1	14																															
+v	1	-0.51	1	14																															
+w	1	-1.02	1	2542																															
+x	2	-0.73	1	16																															
+y	2	-0.73	1	16																															
+z	1	-0.43	1	162																															
+																																			
+																																			
+Results without constraint 15																																			
+																																			
+Max accuracy reached: 0.87																																			
+Max accuracy first reached on iteration: 93 (408 samples)																																			
+Grammar for max accuracy:																																			
+Weights:	0.96	0.5	0.42	0.48	0.56	0.2	0.13	0.26	0.06	0.96																									
+Constraints:	1	2	4	5	9	12	16	32	33	46																									
+Max accuracy reached: 0.87																																			
+Max accuracy first reached on iteration: 93 (408 samples)																																			
+Grammar for max accuracy:																																			
+Weights:	0.96	0.5	0.42	0.48	0.56	0.2	0.13	0.26	0.06	0.96																									
+Constraints:	1	2	4	5	9	12	16	32	33	46																									
+																																			
+Letter	Target	Harmony	Rank	N Cands	Candidates tied with or ranked higher than the target																														
+A	6	-1.82	3	176	34	160																													
+B	4	-0.7	1	150																															
+C	1	0	1	2																															
+D	2	-0.5	1	12																															
+E	22	-2.1	4	2704	934	830	874																												
+F	6	-1.2	1	176																															
+G	1	-0.62	1	14																															
+H	6	-1.2	2	192	38																														
+I	6	-1.66	2	192	70																														
+J	1	-0.42	1	2																															
+K	12	-1.12	1	176																															
+L	1	0	1	14																															
+M	12	-0.98	1	2542																															
+N	4	-0.98	1	162																															
+O	1	0	1	2																															
+P	2	-0.5	1	14																															
+Q	2	-0.7	1	16																															
+R	4	-0.7	1	162																															
+S	1	-1.04	1	14																															
+T	2	-0.76	2	16	10																														
+U	1	0	1	2																															
+V	1	-0.48	1	14																															
+W	1	-0.96	1	2542																															
+X	2	-1.12	1	16																															
+Y	4	-1.12	1	144																															
+Z	1	-1.02	1	162																															
+a	2	-0.5	1	16																															
+b	2	-0.5	1	16																															
+c	1	0	1	2																															
+d	2	-0.56	1	16																															
+e	1	-0.26	1	14																															
+f	2	-1.12	1	16																															
+g	2	-1.12	1	16																															
+h	2	-0.5	1	16																															
+i	2	-0.82	2	8	6																														
+j	2	-1.44	3	8	6	8																													
+k	4	-1.12	1	176																															
+l	1	0	1	2																															
+m	6	-1	1	192																															
+n	2	-0.5	1	16																															
+o	1	0	1	2																															
+p	2	-0.5	1	16																															
+q	2	-0.5	1	16																															
+r	2	-0.5	1	16																															
+s	1	-1.04	1	14																															
+t	2	-0.7	1	16																															
+u	1	0	1	14																															
+v	1	-0.48	1	14																															
+w	1	-0.96	1	2542																															
+x	2	-1.12	1	16																															
+y	2	-1.12	1	16																															
+z	1	-1.02	1	162																															
+																																			
+																																			
+Results without constraint 16																																			
+																																			
+Max accuracy reached: 0.98																																			
+Max accuracy first reached on iteration: 7 (75 samples)																																			
+Grammar for max accuracy:																																			
+Weights:	1	0.71	0.67	0.68	0.78	0.43	0.82	0.52	0.19	0.68																									
+Constraints:	1	2	4	5	9	12	15	32	33	46																									
+Max accuracy reached: 0.98																																			
+Max accuracy first reached on iteration: 7 (75 samples)																																			
+Grammar for max accuracy:																																			
+Weights:	1	0.71	0.67	0.68	0.78	0.43	0.82	0.52	0.19	0.68																									
+Constraints:	1	2	4	5	9	12	15	32	33	46																									
+																																			
+Letter	Target	Harmony	Rank	N Cands	Candidates tied with or ranked higher than the target																														
+A	6	-2.95	1	176																															
+B	4	-1.14	1	150																															
+C	1	0	1	2																															
+D	2	-0.71	2	12	3																														
+E	22	-3.42	1	2704																															
+F	6	-1.85	1	176																															
+G	1	-1.1	1	14																															
+H	6	-1.85	1	192																															
+I	6	-2.9	1	192																															
+J	1	-0.67	1	2																															
+K	12	-1.81	1	176																															
+L	1	0	1	14																															
+M	12	-1.39	1	2542																															
+N	4	-1.39	1	162																															
+O	1	0	1	2																															
+P	2	-0.71	1	14																															
+Q	2	-1.14	1	16																															
+R	4	-1.14	1	162																															
+S	1	-1.77	1	14																															
+T	2	-1.33	1	16																															
+U	1	0	1	2																															
+V	1	-0.68	1	14																															
+W	1	-1.36	1	2542																															
+X	2	-1.81	1	16																															
+Y	4	-1.81	1	144																															
+Z	1	-1.96	1	162																															
+a	2	-0.71	1	16																															
+b	2	-0.71	1	16																															
+c	1	0	1	2																															
+d	2	-0.9	1	16																															
+e	1	-0.62	1	14																															
+f	2	-1.81	1	16																															
+g	2	-1.81	1	16																															
+h	2	-0.71	1	16																															
+i	2	-1.42	1	8																															
+j	2	-2.52	1	8																															
+k	4	-1.81	1	176																															
+l	1	0	1	2																															
+m	6	-1.42	1	192																															
+n	2	-0.71	1	16																															
+o	1	0	1	2																															
+p	2	-0.71	1	16																															
+q	2	-0.71	1	16																															
+r	2	-0.71	1	16																															
+s	1	-1.77	1	14																															
+t	2	-1.14	1	16																															
+u	1	0	1	14																															
+v	1	-0.68	1	14																															
+w	1	-1.36	1	2542																															
+x	2	-1.81	1	16																															
+y	2	-1.81	1	16																															
+z	1	-1.96	1	162																															
+																																			
+																																			
+Results without constraint 32																																			
+																																			
+Max accuracy reached: 0.92																																			
+Max accuracy first reached on iteration: 7 (70 samples)																																			
+Grammar for max accuracy:																																			
+Weights:	0.78	0.67	0.38	0.59	0.83	0.44	0.66	0.87	0.33	0.78																									
+Constraints:	1	2	4	5	9	12	15	16	33	46																									
+Max accuracy reached: 0.92																																			
+Max accuracy first reached on iteration: 7 (70 samples)																																			
+Grammar for max accuracy:																																			
+Weights:	0.78	0.67	0.38	0.59	0.83	0.44	0.66	0.87	0.33	0.78																									
+Constraints:	1	2	4	5	9	12	15	16	33	46																									
+																																			
+Letter	Target	Harmony	Rank	N Cands	Candidates tied with or ranked higher than the target																														
+A	6	-2.6	1	176																															
+B	4	-1.11	1	150																															
+C	1	0	1	2																															
+D	2	-0.67	1	12																															
+E	22	-3.33	32	2704	593	594	374	246	605	606	601	600	602	489	488	487	486	485	483	482	481	494	490	493	597	595	596	876	874	875	873	599	598	134	484
+F	6	-1.78	2	176	34																														
+G	1	-0.82	1	14																															
+H	6	-1.78	1	192																															
+I	6	-2.99	2	192	38																														
+J	1	-0.38	1	2																															
+K	12	-1.49	1	176																															
+L	1	0	1	14																															
+M	12	-1.26	1	2542																															
+N	4	-1.26	1	162																															
+O	1	0	1	2																															
+P	2	-0.67	1	14																															
+Q	2	-1.11	1	16																															
+R	4	-1.11	1	162																															
+S	1	-1.2	1	14																															
+T	2	-1.44	1	16																															
+U	1	0	1	2																															
+V	1	-0.59	1	14																															
+W	1	-1.18	1	2542																															
+X	2	-1.49	1	16																															
+Y	4	-1.49	5	144	25	26	27	28																											
+Z	1	-1.7	1	162																															
+a	2	-0.67	1	16																															
+b	2	-0.67	1	16																															
+c	1	0	1	2																															
+d	2	-1	1	16																															
+e	1	-0.77	1	14																															
+f	2	-1.49	1	16																															
+g	2	-1.49	1	16																															
+h	2	-0.67	1	16																															
+i	2	-1	1	8																															
+j	2	-1.82	1	8																															
+k	4	-1.49	1	176																															
+l	1	0	1	2																															
+m	6	-1.34	1	192																															
+n	2	-0.67	1	16																															
+o	1	0	1	2																															
+p	2	-0.67	1	16																															
+q	2	-0.67	1	16																															
+r	2	-0.67	1	16																															
+s	1	-1.2	1	14																															
+t	2	-1.11	1	16																															
+u	1	0	1	14																															
+v	1	-0.59	1	14																															
+w	1	-1.18	1	2542																															
+x	2	-1.49	1	16																															
+y	2	-1.49	1	16																															
+z	1	-1.7	1	162																															
+																																			
+																																			
+Results without constraint 33																																			
+																																			
+Max accuracy reached: 0.92																																			
+Max accuracy first reached on iteration: 8 (208 samples)																																			
+Grammar for max accuracy:																																			
+Weights:	0.57	0.24	0.11	0.23	0.42	0.37	0.62	0.74	0.4	0.2																									
+Constraints:	1	2	4	5	9	12	15	16	32	46																									
+Max accuracy reached: 0.92																																			
+Max accuracy first reached on iteration: 8 (208 samples)																																			
+Grammar for max accuracy:																																			
+Weights:	0.57	0.24	0.11	0.23	0.42	0.37	0.62	0.74	0.4	0.2																									
+Constraints:	1	2	4	5	9	12	15	16	32	46																									
+																																			
+Letter	Target	Harmony	Rank	N Cands	Candidates tied with or ranked higher than the target																														
+A	6	-1.33	1	176																															
+B	4	-0.61	1	150																															
+C	1	0	1	2																															
+D	2	-0.24	1	12																															
+E	22	-1.83	1	2704																															
+F	6	-0.85	1	176																															
+G	1	-0.48	1	14																															
+H	6	-0.85	1	192																															
+I	6	-1.59	1	192																															
+J	1	-0.11	1	2																															
+K	12	-0.72	1	176																															
+L	1	0	1	14																															
+M	12	-0.47	1	2542																															
+N	4	-0.47	1	162																															
+O	1	0	1	2																															
+P	2	-0.24	1	14																															
+Q	2	-0.61	1	16																															
+R	4	-0.61	1	162																															
+S	1	-0.59	1	14																															
+T	2	-0.61	1	16																															
+U	1	0	1	2																															
+V	1	-0.23	1	14																															
+W	1	-0.46	1	2542																															
+X	2	-0.72	2	16	10																														
+Y	4	-0.72	1	144																															
+Z	1	-1.22	1	162																															
+a	2	-0.24	1	16																															
+b	2	-0.24	1	16																															
+c	1	0	1	2																															
+d	2	-0.24	1	16																															
+e	1	-0.37	1	14																															
+f	2	-0.72	1	16																															
+g	2	-0.72	2	16	10																														
+h	2	-0.24	1	16																															
+i	2	-0.64	1	8																															
+j	2	-1.12	1	8																															
+k	4	-0.72	1	176																															
+l	1	0	1	2																															
+m	6	-0.48	1	192																															
+n	2	-0.24	1	16																															
+o	1	0	1	2																															
+p	2	-0.24	1	16																															
+q	2	-0.24	1	16																															
+r	2	-0.24	1	16																															
+s	1	-0.59	1	14																															
+t	2	-0.61	1	16																															
+u	1	0	1	14																															
+v	1	-0.23	1	14																															
+w	1	-0.46	1	2542																															
+x	2	-0.72	2	16	10																														
+y	2	-0.72	2	16	10																														
+z	1	-1.22	1	162																															
+																																			
+																																			
+Results without constraint 46																																			
+																																			
+Max accuracy reached: 0.83																																			
+Max accuracy first reached on iteration: 24 (259 samples)																																			
+Grammar for max accuracy:																																			
+Weights:	0.76	0.48	0.39	0.46	0.44	0.31	0.64	0.59	0.4	0.04																									
+Constraints:	1	2	4	5	9	12	15	16	32	33																									
+Max accuracy reached: 0.83																																			
+Max accuracy first reached on iteration: 24 (259 samples)																																			
+Grammar for max accuracy:																																			
+Weights:	0.76	0.48	0.39	0.46	0.44	0.31	0.64	0.59	0.4	0.04																									
+Constraints:	1	2	4	5	9	12	15	16	32	33																									
+																																			
+Letter	Target	Harmony	Rank	N Cands	Candidates tied with or ranked higher than the target																														
+A	6	-1.97	1	176																															
+B	4	-0.79	1	150																															
+C	1	0	1	2																															
+D	2	-0.48	1	12																															
+E	22	-2.37	1	2704																															
+F	6	-1.27	1	176																															
+G	1	-0.7	1	14																															
+H	6	-1.27	1	192																															
+I	6	-1.93	1	192																															
+J	1	-0.39	1	2																															
+K	12	-1.18	1	176																															
+L	1	0	1	14																															
+M	12	-0.94	1	2542																															
+N	4	-0.94	1	162																															
+O	1	0	2	2	2																														
+P	2	-0.48	1	14																															
+Q	2	-0.79	2	16	6																														
+R	4	-0.79	1	162																															
+S	1	-1.09	1	14																															
+T	2	-0.83	1	16																															
+U	1	0	1	2																															
+V	1	-0.46	1	14																															
+W	1	-0.92	1	2542																															
+X	2	-1.18	1	16																															
+Y	4	-1.18	1	144																															
+Z	1	-1.32	1	162																															
+a	2	-0.48	2	16	6																														
+b	2	-0.48	2	16	4																														
+c	1	0	1	2																															
+d	2	-0.52	2	16	6																														
+e	1	-0.35	1	14																															
+f	2	-1.18	1	16																															
+g	2	-1.18	2	16	6																														
+h	2	-0.48	1	16																															
+i	2	-0.92	1	8																															
+j	2	-1.62	1	8																															
+k	4	-1.18	1	176																															
+l	1	0	1	2																															
+m	6	-0.96	1	192																															
+n	2	-0.48	1	16																															
+o	1	0	2	2	2																														
+p	2	-0.48	2	16	4																														
+q	2	-0.48	2	16	6																														
+r	2	-0.48	1	16																															
+s	1	-1.09	1	14																															
+t	2	-0.79	1	16																															
+u	1	0	1	14																															
+v	1	-0.46	1	14																															
+w	1	-0.92	1	2542																															
+x	2	-1.18	1	16																															
+y	2	-1.18	1	16																															
+z	1	-1.32	1	162																															
+																																			
+																																			
+Summary																																			
+Constraint	Max Accuracy	Iterations	Total Samples	Failed Letters																															
+32	92%	7	70	"E, F, I, Y"																															
+1	87%	197	547	"G, N, V, W, e, v, w"																															
+2	87%	50	330	"G, N, V, W, e, v, w"																															
+4	81%	6	26	"A, E, F, H, I, T, U, f, r, t"																															
+5	85%	16	95	"H, X, Y, a, d, q, x, y"																															
+33	92%	8	208	"X, g, x, y"																															
+9	96%	15	169	"A, N"																															
+12	85%	44	215	"B, D, G, M, N, P, d, m"																															
+46	83%	24	259	"O, Q, a, b, d, g, o, p, q"																															
+15	87%	93	408	"A, E, H, I, T, i, j"																															
+16	98%	7	75	D																															
