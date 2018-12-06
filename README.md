@@ -1,7 +1,7 @@
 # HarmonicGrammar
 Python code for Harmonic Grammar modeling of letter-strokes in writing
 
- - Run the main script HG_all1.py
+ - Run the main script HG_all1.py (which calls the latest version of HGlearn)
  - Constraints file should be formatted like MinConstEng.txt
     - constraints can have any name, as long as it does not have spaces (e.g., '1', or 'start_at_top')
  - Targets file should be formatted like trgEng.txt
