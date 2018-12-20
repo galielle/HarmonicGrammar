@@ -168,15 +168,17 @@ def evaluate(weights, grammar, data):
 # Adjust the weights
 def adjust_weights(iterations, data, grammar, weights, rate, sum_of_relative_frequencies, suppress):
     # Evaluate the data on the initial grammar
-    initial_grammar_text = 'INITIAL GRAMMAR:\t'
-    for i in range(0, len(weights)):
-        initial_grammar_text = initial_grammar_text + str('%.2f\t' % (weights[i]))
-    initial_grammar_text = initial_grammar_text + '\n'
+    initial_grammar = weights
+    initial_grammar_text = 'INITIAL GRAMMAR:\t' + '\t'.join(map(str, [round(wt, 3) for wt in initial_grammar])) + '\n'
     print initial_grammar_text
     accuracy = evaluate(weights, grammar, data)
     max_accuracy = accuracy
     max_acc_iter = 0
     max_acc_wts = weights
+
+    rand_seed = random.randint(1, 1000)
+    random.seed(rand_seed)
+
     if suppress == 0:
         print 'ITERATION: 0'
 
@@ -215,7 +217,7 @@ def adjust_weights(iterations, data, grammar, weights, rate, sum_of_relative_fre
             else:
                 1 == 1
             s += 1
-    return ([max_accuracy, max_acc_iter, max_acc_wts, initial_grammar_text, max_acc_s, s])
+    return ([max_accuracy, max_acc_iter, max_acc_wts, initial_grammar, max_acc_s, s, rand_seed])
 
 # Create a log file - override=0 will create a new log for each run. 1 will create a new log once a day.
 def create_log_file(override):
@@ -239,12 +241,15 @@ def write_summary(final_result, constraints, logf):
     max_accuracy = final_result[0]
     max_acc_iter = final_result[1]
     max_acc_wts = final_result[2]
+    initial_grammar = final_result[3]
     max_acc_s = final_result[4]
+    rand_seed = final_result[6]
 
     # Print a summary of the maximum accuracy and the weights associated with it
-    summary_text = '\nMax accuracy reached: %.2f\nMax accuracy first reached on iteration: %d (%d samples)\nGrammar for max accuracy:\nWeights:\t%s\nConstraints:\t%s' \
-                   % (max_accuracy, max_acc_iter, max_acc_s, '\t'.join(map(str, [round(wt, 2) for wt in max_acc_wts])),
-                      '\t'.join(map(str, constraints)))
+    summary_text = '\nMax accuracy reached: %.2f\nMax accuracy first reached on iteration: %d (%d samples)\nRandom number generated initialized with seed %d\n' \
+                   'Initial grammar weights:\t%s\nGrammar for max accuracy:\t%s\nConstraints:\t%s' \
+                   % (max_accuracy, max_acc_iter, max_acc_s, rand_seed, '\t'.join(map(str, [round(wt, 2) for wt in initial_grammar])),
+                      '\t'.join(map(str, [round(wt, 2) for wt in max_acc_wts])), '\t'.join(map(str, constraints)))
     logf.write(summary_text)
     print summary_text
 
