@@ -11,7 +11,7 @@ import datetime
 import numpy as np
 import os
 import glob
-import HGlearn11 as hg
+import HGlearn12 as hg
 
 
 def main():
@@ -50,7 +50,7 @@ def main():
         hg_letters = harmonic_grammar(eval_files_dir, iterations, rate, uni, override = 1) # Override = 0 to create a new logfile for each run
 
     elif flag == 'minusone':
-        a = minusone(eval_files_dir, iterations, rate, uni)
+        minus1 = minusone(eval_files_dir, iterations, rate, uni)
 
     elif flag == 'all':
         great_success = run_all_hg(eval_files_dir, iterations, rate, uni)
@@ -63,9 +63,9 @@ def main():
 ################
 
 def get_flag(flags):
-    not_flag = 'Use with one of the following options:\n" ' \
+    not_flag = 'Use with one of the following options:\n' \
                'hg - calculate the optimal weights based on given constraints file and targets file\n' \
-               'minusOne - run the script with one constraint fewer each time\n' \
+               'minusOne - run the script removing one of the constraints each time\n' \
                'all - run the script on all target files in a given directory\n'
 
     if len(sys.argv) != 2:
@@ -115,17 +115,10 @@ def minusone(eval_files_dir, iterations, rate, uni):
     print 'Found %d targets...\n' % (len(data))
 
     # Open a log file
-    if targets_filename[-4:] == '.txt':
-        ID = targets_filename[:-4]
-    else:
-        ID = targets_filename
-    if ID[:3] == 'trg':
-        ID = ID[3:]
-    if ID[0] == '_':
-        ID = ID[1:]
-    else:
-        ID = ID
-    log_filename = 'HGlog_MinusOne_%s.txt' % (ID)
+    ID = determine_id(targets_filename)
+    now = datetime.datetime.now()
+    log_filename = 'HGlog_MinusOne_%d-%d-%d_%s.txt' % (now.year, now.month, now.day, ID)
+
     logf = open(log_filename, 'w')
     logf.write('%s\n' % (ID))
 
@@ -153,27 +146,14 @@ def minusone(eval_files_dir, iterations, rate, uni):
         # Evaluate the data and adjust the weights for n iterations
         final_result = hg.adjust_weights(iterations, data, grammar, weights, rate, sum_of_relative_frequencies, suppress)
 
+        full_success = hg.write_summary(final_result, constraints, logf)
+        failed_letters = hg.find_failures(grammar, data, constraints, final_result, logf,
+                                          full_success)  # failed_letters = (letter, target, failures)
+
         max_accuracy = final_result[0]
         max_acc_iter = final_result[1]
         max_acc_wts = final_result[2]
         max_acc_s = final_result[4]
-
-        # Print summary of maximum accuracy and weights associated with it
-        summary_text = '\nMax accuracy reached: %.2f\nMax accuracy first reached on iteration: %d (%d samples)\nGrammar for max accuracy:\nWeights:\t%s\nConstraints:\t%s' \
-                       % (max_accuracy, max_acc_iter, max_acc_s, '\t'.join(map(str, [round(wt, 2) for wt in max_acc_wts])),
-                          '\t'.join(map(str, constraints)))
-        logf.write(summary_text)
-        print summary_text
-
-        full_success = hg.write_summary(final_result, constraints, logf)
-        failed_letters = hg.find_failures(grammar, data, constraints, final_result, logf,
-                                          full_success)  # failed_letters = (letter, target, failures)
-        if full_success == 1:
-            1 == 1
-        else:
-            for failure in failed_letters:
-                text = "\nLetter: %s\tTarget: %s\tCandidates ranked higher than (or tied with) the target:\t%s\n" % (
-                    failure[0], failure[1], '\t'.join(failure[2]))
 
         max_acc_without[const] = (max_accuracy, max_acc_iter, max_acc_wts, failed_letters, max_acc_s)
 
@@ -251,6 +231,19 @@ def run_all_hg(eval_files_dir, iterations, rate, uni):
     log_all.close()
 
     return ("Great success")
+
+def determine_id(targets_filename):
+    if targets_filename[-4:] == '.txt':
+        ID = targets_filename[:-4]
+    else:
+        ID = targets_filename
+    if ID[:3] == 'trg':
+        ID = ID[3:]
+    if ID[0] == '_':
+        ID = ID[1:]
+    else:
+        ID = ID
+    return(ID)
 
 def get_target_files(target_dir):
     os.chdir(target_dir)
