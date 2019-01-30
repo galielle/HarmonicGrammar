@@ -8,9 +8,10 @@ import numpy as np
 import os
 import glob
 import operator
+import re
 
 ##########################
-
+## The main function that runs the GLA to find optimal HG weights for a given set of targets and constraint violations
 def main(eval_files_dir, constraints, targets_filename, iterations, rate, uni, override):
     eval_files_letters = get_eval_files(eval_files_dir)
     filenames = eval_files_letters[0]
@@ -35,7 +36,7 @@ def main(eval_files_dir, constraints, targets_filename, iterations, rate, uni, o
     weights = initialize_weights(uni, constraints)
 
     # Open a log file
-    logf = create_log_file(override)
+    logf = create_log_file(targets_filename, override)
 
     sum_of_relative_frequencies = sum(int(datum[2]) for datum in data)
 
@@ -129,6 +130,7 @@ def compute_change_vector(error, target, rate):
 
 # Check if a given input matches the output
 def update(datum, grammar, weights, rate):
+    no_neg = 0 # Set to 1 to prohibit negative values; set to 0 to allow negative values
     pInput = datum[0]
     target = datum[1]
     output = optimize(weights, grammar, pInput, len(target))
@@ -151,6 +153,8 @@ def update(datum, grammar, weights, rate):
             pick_one = random.choice(fail)
             change_vector = compute_change_vector(grammar[pInput][pick_one[0]], grammar[pInput][pick_one[1]], rate)
             weights = np.add(weights, change_vector).tolist()
+            if no_neg == 1:
+                weights = [max(w, 0) for w in weights]
     return weights
 
 # Evaluate the data on a given set of weights
@@ -177,6 +181,7 @@ def adjust_weights(iterations, data, grammar, weights, rate, sum_of_relative_fre
     max_acc_wts = weights
 
     rand_seed = random.randint(1, 1000)
+    #rand_seed = 562
     random.seed(rand_seed)
 
     if suppress == 0:
@@ -191,7 +196,7 @@ def adjust_weights(iterations, data, grammar, weights, rate, sum_of_relative_fre
             print '\nReached an accuracy of 1 after %d iterations (%d total samples)' % (max_acc_iter, s-1)
             break
         # Define when to stop if no solution was found
-        elif s >= max(10*len(data), iterations, max_acc_s + min(250, iterations)):
+        elif s >= max(10*len(data), iterations, max_acc_s + max(250, iterations/4)):
             print '\nSampled %d times. Max accuracy first reached %d samples ago.\nStopping now.' % (s, s - max_acc_s)
             break
         # Otherwise run until n iterations were completed
@@ -220,18 +225,32 @@ def adjust_weights(iterations, data, grammar, weights, rate, sum_of_relative_fre
     return ([max_accuracy, max_acc_iter, max_acc_wts, initial_grammar, max_acc_s, s, rand_seed])
 
 # Create a log file - override=0 will create a new log for each run. 1 will create a new log once a day.
-def create_log_file(override):
+def create_log_file(targets_filename, override):
+    if targets_filename[-4:] == '.txt':
+        targets_filename = targets_filename[0:-4]
     now = datetime.datetime.now()
     counter = 1
-    base_lf = 'Log%d-%d-%d' % (now.year, now.month, now.day)
-    log_filename = base_lf + '.txt'
+    suff = re.compile('[nN][oO][a-zA-Z0-9]{1,6}\.txt')
+    p_inits = re.compile('[A-Z]{3,3}_')
+    p = p_inits.findall(targets_filename)
+    if len(p) == 0:
+        if targets_filename[0:3] == 'trg':
+            base_name = targets_filename[3:]
+        else:
+            base_name = targets_filename
+    else:
+        suffix = suff.findall(targets_filename)
+        if len(suffix) == 0:
+            base_name = '%s' % (p[0][0:3])
+        else:
+            base_name = '%s_%s' % (p[0][0:3], suffix[0][0:-4])
+    log_filename = 'Log_%s_%d-%d-%d_%d.txt' % (base_name, now.year, now.month, now.day, counter)
     if override == 1:
         logf = open(log_filename, 'w')
     else:
         while os.path.isfile(log_filename):
             counter += 1
-            base_lf = 'Log%d-%d-%d_%d' % (now.year, now.month, now.day, counter)
-            log_filename = base_lf + '.txt'
+            log_filename = 'Log_%s_%d-%d-%d_%d.txt' % (base_name, now.year, now.month, now.day, counter)
         logf = open(log_filename, 'w')
     return (logf)
 
@@ -246,7 +265,7 @@ def write_summary(final_result, constraints, logf):
     rand_seed = final_result[6]
 
     # Print a summary of the maximum accuracy and the weights associated with it
-    summary_text = '\nMax accuracy reached: %.2f\nMax accuracy first reached on iteration: %d (%d samples)\nRandom number generated initialized with seed %d\n' \
+    summary_text = '\nMax accuracy reached: %.2f\nMax accuracy first reached on iteration: %d (%d samples)\nRandom number generator initialized with seed %d\n' \
                    'Initial grammar weights:\t%s\nGrammar for max accuracy:\t%s\nConstraints:\t%s' \
                    % (max_accuracy, max_acc_iter, max_acc_s, rand_seed, '\t'.join(map(str, [round(wt, 2) for wt in initial_grammar])),
                       '\t'.join(map(str, [round(wt, 2) for wt in max_acc_wts])), '\t'.join(map(str, constraints)))
@@ -288,7 +307,7 @@ def find_failures(grammar, data, constraints, final_result, logf, full_success):
             rank = 1
             ranked_above = []
             t_h = harmonies[t]
-            for cand in harmonies.keys():
+            for cand in harmonies:
                 if harmonies[cand] >= t_h and cand != t:
                     ranked_above.append(cand)
                     rank += 1
@@ -335,7 +354,7 @@ def get_constraints(constraints_filename):
     while not const_path:
         while True:
             CorN = raw_input(
-                'Constraints file not found in %s.\nPress 1 to change directory or 2 to enter a new constraints filename: ')
+                'Constraints file not found in %s.\nPress 1 to change directory or 2 to enter a new constraints filename: ' % const_path)
             if CorN not in ('1', '2'):
                 print "Sorry, I didn\'t get that..."
                 continue
